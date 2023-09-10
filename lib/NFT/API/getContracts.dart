@@ -1,11 +1,12 @@
 import 'dart:convert';
-import 'constant/constant.dart';
+
 import 'package:http/http.dart' as http;
+import 'package:nftgallery/NFT/API/constant/constant.dart';
 import 'package:nftgallery/NFT/Models/Transaction.dart';
 
 Future<List<Transaction>> fetchContract() async {
   final url = Uri.parse(
-      'https://api.verbwire.com/v1/nft/data/transactions?walletAddress=${Wallet}&chain=goerli&sortDirection=ASC&limit=1000&page=1');
+      'https://api.verbwire.com/v1/nft/data/transactions?walletAddress=0x011f77017E0E02739489C629f7473671DFdF2464&chain=goerli&sortDirection=ASC&limit=1000&page=1');
 
   final response = await http.get(
     url,
@@ -17,24 +18,6 @@ Future<List<Transaction>> fetchContract() async {
 
   if (response.statusCode == 200) {
     final jsonResponse = jsonDecode(response.body);
-    // final nftTransactions =
-    //     List<Map<String, dynamic>>.from(jsonResponse['nft_transactions']);
-    // final transactions = nftTransactions
-    //     .map((transactionJson) => Transaction.fromJson(transactionJson))
-    //     .toList();
-
-    // print('object: ${transactions}');
-
-    // // Process the extracted data
-    // for (var transaction in transactions) {
-    //   print('Token Name: ${transaction.blockNumber}');
-    //   // Add more fields as needed
-    // }
-    // Map<String, dynamic> transactions = jsonDecode(response.body);
-
-    // List<dynamic> contracts = transactions['nft_transactions'];
-    // print(contracts);
-    // return contracts;
     final nftTransactions =
         List<Map<String, dynamic>>.from(jsonResponse['nft_transactions']);
     final transactions =

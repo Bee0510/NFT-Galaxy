@@ -8,7 +8,7 @@ import 'package:nftgallery/NFT/Models/NFTs.dart';
 
 Future<List<NFTs>> fetchNFTs() async {
   final url = Uri.parse(
-      'https://api.verbwire.com/v1/nft/data/created?walletAddress=${Wallet}&chain=goerli&sortDirection=ASC&limit=1000&page=1');
+      'https://api.verbwire.com/v1/nft/data/created?walletAddress=0x011f77017E0E02739489C629f7473671DFdF2464&chain=goerli&sortDirection=ASC&limit=1000&page=1');
   final headers = {
     'X-API-Key': key,
     'accept': 'application/json',

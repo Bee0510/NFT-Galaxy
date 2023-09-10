@@ -81,7 +81,8 @@ Future<void> mintNFT(String img, String name, String des, String chain,
 
     // Show the transaction hash in a pop-up
     Fluttertoast.showToast(
-      msg: 'Transaction Hash: $transactionHash',
+      // msg: 'Transaction Hash: $transactionHash',
+      msg: 'NFT Minted successfully. ',
       toastLength: Toast.LENGTH_LONG,
       gravity: ToastGravity.BOTTOM,
       backgroundColor: Colors.black,
