@@ -6,7 +6,7 @@ AppBar appBar() {
   return AppBar(
     elevation: 0,
     backgroundColor: Color.fromRGBO(21, 21, 21, 100),
-    title: Text('NFT Gallery'),
+    title: Text('NFT Galaxy'),
     leading: Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
