@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "58800207899",
+    "project_id": "nftgalaxy-4a365",
+    "storage_bucket": "nftgalaxy-4a365.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58800207899:android:17cb3dd2beeac6325c20be",
+        "android_client_info": {
+          "package_name": "com.example.nftgallery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58800207899-0ta3ptvq1l1utuf4iu308vpc6gpnc5ea.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nftgallery",
+            "certificate_hash": "a7ec4aafd36c2b0344f857151fc0a02a0a2ac8ab"
+          }
+        },
+        {
+          "client_id": "58800207899-oka9ovis5n3o5v2k9tgrp8taifckkthn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7wU7JaPhVF2ZCy2oj6AxCewpa66rhDzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58800207899-oka9ovis5n3o5v2k9tgrp8taifckkthn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
